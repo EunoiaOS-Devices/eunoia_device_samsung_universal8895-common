@@ -108,7 +108,7 @@ PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(COMMON_PATH)/framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/os/config/device_framework_matrix.xml
 
 # Vendor separation
 TARGET_COPY_OUT_VENDOR := system/vendor
@@ -154,7 +154,7 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 BOARD_HAVE_SAMSUNG_WIFI          := true
 
 # Sepolicy
-include device/lineage/sepolicy/exynos/sepolicy.mk
+include device/eunoia/sepolicy/exynos/sepolicy.mk
 BOARD_SEPOLICY_TEE_FLAVOR := mobicore
 include device/samsung_slsi/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += device/samsung/universal8895-common/sepolicy/vendor
